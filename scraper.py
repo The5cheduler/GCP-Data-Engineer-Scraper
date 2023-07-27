@@ -1,7 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
-
+import threading
 import time
+import json
 
 def get_page_content(url):
     headers = {
@@ -19,25 +20,62 @@ def get_page_content(url):
             raise Exception(f"Failed to fetch the page. Status code: {response.status_code}")
     raise Exception(f"Failed to fetch the page after {retries} retries.")
 
+def extract_question_and_answers(soup):
+    soup = BeautifulSoup('<span class="badge badge-secondary">' + soup, 'html.parser')    
+    question_num = soup.find('span', {'class': 'badge badge-secondary'}).text.strip().split(' ')[-1]   
+    question_text = ""
+    choices = []
+    correct_answer = []
+    explanation = ""
+    topic = ""
+
+    br_tags = soup.select('br')
+    if len(br_tags) >= 3:
+        question_text = br_tags[2].previous_sibling
+        if question_text is not None:
+            question_text = str(question_text).strip()
+
+    btn_group_toggle = soup.select_one('.btn-group-toggle')
+    if btn_group_toggle is not None:
+        choices = [choice.text.strip() for choice in btn_group_toggle.select('.alert-secondary')]
+        correct_answer = [choice.text.strip() for choice in btn_group_toggle.select('.alert-secondary[value="1"]')]
+
+    explanation_elem = soup.select_one('.collapse .card-body')
+    if explanation_elem is not None:
+        explanation = explanation_elem.text.strip().replace('\\r\\n\\r\\n\\r\\n', '').replace('\\r\\n', '').replace('\nA', '').replace('\\r\\n\\r\\n', '').replace('\\n','').replace('\\\'t','').replace(' we\\xe2\\x80\\x99ll ', '')
+
+    topic_elem = soup.select_one('i')
+    if topic_elem is not None:
+        topic = topic_elem.text.strip().replace('(', '').replace(')', '')
+
+    if len(choices) > 1:
+        return { 'no' : question_num, 
+            'text': question_text, 
+            'choices':choices, 
+            'answer' : correct_answer, 
+            'expanation' : explanation.strip(), 
+            'topic' : topic
+        }
+
+
+    
 def scrape_data(url):
     page_content = get_page_content(url)
-    soup = BeautifulSoup(page_content, 'html.parser')
-    print(extract_question_and_answers(soup))
+    question_data_list = str(page_content).split('<span class="badge badge-secondary">')
+    question_data_list = question_data_list[1:]
 
-def extract_question_and_answers(soup):
-    question_card = soup.findAll('div', class_='card exam-question-card')
-    for question in question_card:
-        question_number = question.find('div', class_='card-header').text.strip().split()[1]
-        question_topic = question.find('span', class_='question-title-topic').text.strip()
-        question_text = question.find('div', class_='card-body').p.text.strip()
-        answer_choices = {}
-        for choice in question.find_all('li', class_='multi-choice-item'):
-            answer_letter = choice.find('span', class_='multi-choice-letter').text.strip().replace('.', '')
-            answer_text = choice.text.strip().strip().replace('\n', ' ').replace('\r', '').strip().replace('  ', '').replace(answer_letter, '').replace('. ','')
-            answer_choices[answer_letter]= answer_text
-        return question_number, question_topic, question_text, answer_choices
-
+    result = {}
+    
+    for question_data in question_data_list:
+        data = extract_question_and_answers(question_data)
+        if data is not None:
+            result[data['no']] = data
+    return result
 if __name__ == "__main__":
-    url = "https://www.examtopics.com/exams/google/professional-data-engineer/view/"
-    scrape_data(url)
+    final_result = []
+    for i in range(1, 25):
+        url = f"https://www.passnexam.com/google/google-data-engineer/{i}"
+        single_page_date = scrape_data(url)
+        final_result.append(single_page_date)
+    json.dump(final_result, open('GCP_DE_uestions.json', 'w'), indent=4)
 
