@@ -3490,7 +3490,7 @@
         },
         "229": {
             "no": "229",
-            "text": "Flowlogistic is a leading logistics and supply chain provider. They help businesses throughout the world manage their resources and transport them to their final destination. The company has grown rapidly, expanding their offerings to include rail, truck, aircraft, and oceanic shipping.\\r\\n",
+            "text": " <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Existing Technical Environment</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>SEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>Store the common data encoded as Avro in Google Cloud Storage.\\r\\n\\r\\n</b> ",
             "choices": [
                 "Store the common data in BigQuery as partitioned tables.",
                 "Store the common data in BigQuery and expose authorized views.",
@@ -3505,7 +3505,7 @@
         },
         "230": {
             "no": "230",
-            "text": "Flowlogistic is a leading logistics and supply chain provider. They help businesses throughout the world manage their resources and transport them to their final destination. The company has grown rapidly, expanding their offerings to include rail, truck, aircraft, and oceanic shipping.\\r\\n",
+            "text": " <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Existing Technical Environment</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>SEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>Cloud Pub/Sub, Cloud Dataflow, and Cloud Storage\\r\\n</b> \n <b>Notice</b> \n <b>/home/passnexa/public_html/class/class_DB.php</b> \n <b>59</b> \n <b>Notice</b> \n <b>/home/passnexa/public_html/class/class_DB.php</b> \n <b>60</b> \n <b>Notice</b> \n <b>/home/passnexa/public_html/class/class_DB.php</b> \n <b>61</b> \n <b>Notice</b> \n <b>/home/passnexa/public_html/class/class_DB.php</b> \n <b>62</b> \n <b>Notice</b> \n <b>/home/passnexa/public_html/class/class_DB.php</b> \n <b>63</b> ",
             "choices": [
                 "Cloud Pub/Sub, Cloud Dataflow, and Cloud Storage",
                 "Cloud Pub/Sub, Cloud Dataflow, and Local SSD",
@@ -3522,7 +3522,7 @@
     {
         "231": {
             "no": "231",
-            "text": "Flowlogistic is a leading logistics and supply chain provider. They help businesses throughout the world manage their resources and transport them to their final destination. The company has grown rapidly, expanding their offerings to include rail, truck, aircraft, and oceanic shipping.\\r\\n",
+            "text": " <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Existing Technical Environment</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>SEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>Create a view on the table to present to the virtualization tool.\\r\\n\\r\\n</b> ",
             "choices": [
                 "Export the data into a Google Sheet for virtualization.",
                 "Create an additional table with only the necessary columns.",
@@ -3537,7 +3537,7 @@
         },
         "232": {
             "no": "232",
-            "text": "Flowlogistic is a leading logistics and supply chain provider. They help businesses throughout the world manage their resources and transport them to their final destination. The company has grown rapidly, expanding their offerings to include rail, truck, aircraft, and oceanic shipping.\\r\\n",
+            "text": " <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Existing Technical Environment</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>SEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>Attach the timestamp and Package ID on the outbound message from each publisher device as they are sent to Clod Pub/Sub.\\r\\n\\r\\n</b> ",
             "choices": [
                 "Attach the timestamp on each message in the Cloud Pub/Sub subscriber application as they are received.",
                 "Attach the timestamp and Package ID on the outbound message from each publisher device as they are sent to Clod Pub/Sub.",
@@ -3552,7 +3552,7 @@
         },
         "233": {
             "no": "233",
-            "text": "<b>MJTelco Case Study</b>",
+            "text": " <b>MJTelco Case Study</b> \n <b>Company Overview</b> \n <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>CEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>The maximum number of workers\\r\\n\\r\\n</b> ",
             "choices": [
                 "The zone",
                 "The number of workers",
@@ -3567,7 +3567,7 @@
         },
         "234": {
             "no": "234",
-            "text": "<b>MJTelco Case Study</b>",
+            "text": " <b>MJTelco Case Study</b> \n <b>Company Overview</b> \n <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>CEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>Load the data into Google BigQuery tables, write a Google Data Studio 360 report that connects to your data, calculates a metric, and then uses a filter expression to show only suboptimal rows in a table.\\r\\n</b> ",
             "choices": [
                 "Load the data into Google Sheets, use formulas to calculate a metric, and use filters/sorting to show only suboptimal links in a table.",
                 "Load the data into Google BigQuery tables, write Google Apps Script that queries the data, calculates the metric, and shows only suboptimal rows in a table in Google Sheets.",
@@ -3582,7 +3582,7 @@
         },
         "235": {
             "no": "235",
-            "text": "<b>MJTelco Case Study</b>",
+            "text": " <b>MJTelco Case Study</b> \n <b>Company Overview</b> \n <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>CEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>\\r\\nB. Ensure each table is included in a dataset for a region.<br/>\\r\\nC. Adjust the settings for each table to allow a related region-based security group view access.\\r\\n\\r\\n</b> ",
             "choices": [
                 "Ensure all the tables are included in global dataset.",
                 "Ensure each table is included in a dataset for a region.",
@@ -3599,7 +3599,7 @@
         },
         "236": {
             "no": "236",
-            "text": "<b>MJTelco Case Study</b>",
+            "text": " <b>MJTelco Case Study</b> \n <b>Company Overview</b> \n <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>CEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>Rowkey: date#device_id Column data: data_point\\r\\n</b> ",
             "choices": [
                 "Rowkey: date#device_id Column data: data_point",
                 "Rowkey: date Column data: device_id, data_point",
@@ -3615,7 +3615,7 @@
         },
         "237": {
             "no": "237",
-            "text": "<b>MJTelco Case Study</b>",
+            "text": " <b>MJTelco Case Study</b> \n <b>Company Overview</b> \n <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>CEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>BigQuery and Cloud Bigtable\\r\\n</b> ",
             "choices": [
                 "Cloud Datastore and Cloud Bigtable",
                 "Cloud Bigtable and Cloud SQL",
@@ -3630,7 +3630,7 @@
         },
         "238": {
             "no": "238",
-            "text": "<b>MJTelco Case Study</b>",
+            "text": " <b>MJTelco Case Study</b> \n <b>Company Overview</b> \n <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>CEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>Look through the current data and compose a small set of generalized charts and tables bound to criteria filters that allow value selection.\\r\\n\\r\\n</b> ",
             "choices": [
                 "Look through the current data and compose a series of charts and tables, one for each possible combination of criteria.",
                 "Look through the current data and compose a small set of generalized charts and tables bound to criteria filters that allow value selection.",
@@ -3645,7 +3645,7 @@
         },
         "239": {
             "no": "239",
-            "text": "<b>MJTelco Case Study</b>",
+            "text": " <b>MJTelco Case Study</b> \n <b>Company Overview</b> \n <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>CEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>Create a partitioned table called tracking_table and include a TIMESTAMP column.\\r\\n\\r\\n</b> ",
             "choices": [
                 "Create a table called tracking_table and include a DATE column.",
                 "Create a partitioned table called tracking_table and include a TIMESTAMP column.",
@@ -3660,7 +3660,7 @@
         },
         "240": {
             "no": "240",
-            "text": "\\r\\n",
+            "text": " <b>Flowlogistic Case Study</b> \n <b>Company Overview</b> \n <b>Company Background</b> \n <b>Solution Concept</b> \n <b>Existing Technical Environment</b> \n <b>Business Requirements</b> \n <b>Technical Requirements</b> \n <b>SEO Statement</b> \n <b>CTO Statement</b> \n <b>CFO Statement</b> \n <b>Cloud Pub/Sub, Cloud Dataflow, and Cloud Storage\\r\\n\\r\\n</b> \n <b>Notice</b> \n <b>/home/passnexa/public_html/class/class_DB.php</b> \n <b>59</b> \n <b>Notice</b> \n <b>/home/passnexa/public_html/class/class_DB.php</b> \n <b>60</b> \n <b>Notice</b> \n <b>/home/passnexa/public_html/class/class_DB.php</b> \n <b>61</b> \n <b>Notice</b> \n <b>/home/passnexa/public_html/class/class_DB.php</b> \n <b>62</b> \n <b>Notice</b> \n <b>/home/passnexa/public_html/class/class_DB.php</b> \n <b>63</b> ",
             "choices": [
                 "Cloud Pub/Sub, Cloud Dataflow, and Cloud Storage",
                 "Cloud Pub/Sub, Cloud Dataflow, and Local SSD",
